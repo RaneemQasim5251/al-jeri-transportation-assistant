@@ -1,0 +1,7 @@
+{
+  "name": "Al Jeri Transportation Assistant",
+  "description": "An intelligent chat and voice assistant for Al Jeri Transportation Company, providing instant information about services, fleet, and contact details based on the official website.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
