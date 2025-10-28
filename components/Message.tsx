@@ -19,10 +19,10 @@ const Message: React.FC<MessageProps> = ({ message, isLive = false }) => {
   const isUser = message.role === 'user';
 
   const containerClasses = `flex items-start gap-3 ${isUser ? 'justify-end' : 'justify-start'}`;
-  const bubbleClasses = `max-w-xs md:max-w-md px-4 py-3 rounded-2xl ${
+  const bubbleClasses = `max-w-xs md:max-w-md px-5 py-3 rounded-2xl shadow-sm ${
     isUser
-      ? 'bg-aljeri-blue text-white ltr:rounded-br-lg rtl:rounded-bl-lg'
-      : 'bg-asphalt-gray-100 dark:bg-asphalt-gray-800 text-gray-800 dark:text-gray-200 ltr:rounded-bl-lg rtl:rounded-br-lg'
+      ? 'bg-aljeri-blue text-white font-medium ltr:rounded-br-lg rtl:rounded-bl-lg'
+      : 'bg-asphalt-gray-100 dark:bg-asphalt-gray-700 text-gray-800 dark:text-white font-medium ltr:rounded-bl-lg rtl:rounded-br-lg'
   } ${isLive ? 'opacity-70' : ''}`;
   const iconClasses = `w-8 h-8 rounded-full flex items-center justify-center shrink-0 ${
     isUser ? 'bg-aljeri-green text-white' : 'bg-asphalt-gray-200 dark:bg-asphalt-gray-700 text-aljeri-blue dark:text-white'

@@ -13,7 +13,7 @@ const ChatHeader: React.FC<ChatHeaderProps> = ({ onClose, language, setLanguage 
   const t = translations[language];
 
   return (
-    <div className="flex items-center justify-between p-4 bg-asphalt-gray-100 dark:bg-asphalt-gray-800 rounded-t-2xl border-b border-asphalt-gray-200 dark:border-asphalt-gray-700">
+    <div className="flex items-center justify-between px-6 py-4 bg-white dark:bg-asphalt-gray-800 rounded-t-2xl border-b border-asphalt-gray-200 dark:border-asphalt-gray-700 shadow-sm">
       <div className="flex items-center gap-3">
         <div className="bg-aljeri-green p-2 rounded-full">
           <TruckIcon className="w-6 h-6 text-white" />

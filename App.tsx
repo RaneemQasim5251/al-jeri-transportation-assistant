@@ -11,7 +11,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="bg-asphalt-gray-100 dark:bg-asphalt-gray-900 min-h-screen w-full font-sans transition-colors">
+    <div className="bg-gradient-to-b from-asphalt-gray-100 to-white dark:from-asphalt-gray-900 dark:to-asphalt-gray-800 min-h-screen w-full font-sans transition-colors">
       <div className="absolute bottom-5 right-5 z-50">
         {!isWidgetOpen && (
           <button
