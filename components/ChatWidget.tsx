@@ -122,10 +122,14 @@ const ChatWidget: React.FC<ChatWidgetProps> = ({ isOpen, onClose }) => {
   return (
     <div
       dir={language === 'ar' ? 'rtl' : 'ltr'}
-      className={`fixed bottom-5 right-5 w-[calc(100%-40px)] h-[calc(100%-60px)] md:w-[420px] md:h-[600px] flex flex-col bg-white dark:bg-asphalt-gray-800 rounded-2xl shadow-2xl transition-all duration-300 ease-in-out ${
+      className={`fixed bottom-5 right-5 w-[calc(100%-40px)] h-[calc(100%-60px)] md:w-[400px] md:h-[600px] flex flex-col bg-white dark:bg-[#1a1f2e] rounded-2xl shadow-2xl transition-all duration-300 ease-in-out ${
         isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
       }`}
-      style={{boxShadow: '0 10px 25px -5px rgba(0,0,0,0.2), 0 20px 40px -10px rgba(0,0,0,0.2)'}}
+      style={{
+        boxShadow: '0 10px 25px -5px rgba(0,0,0,0.3), 0 20px 40px -10px rgba(0,0,0,0.25)',
+        backdropFilter: 'blur(8px)',
+        WebkitBackdropFilter: 'blur(8px)'
+      }}
     >
       <ChatHeader onClose={onClose} language={language} setLanguage={setLanguage} />
       <MessageArea messages={messages} liveUser={userTranscription} liveAssistant={assistantTranscription} />

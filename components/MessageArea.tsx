@@ -19,7 +19,7 @@ const MessageArea: React.FC<MessageAreaProps> = ({ messages, liveUser, liveAssis
   }, [messages, liveUser, liveAssistant]);
 
   return (
-    <div ref={scrollRef} className="flex-1 overflow-y-auto p-6 space-y-6 bg-white dark:bg-asphalt-gray-800">
+    <div ref={scrollRef} className="flex-1 overflow-y-auto px-5 py-4 space-y-4 bg-white dark:bg-[#1a1f2e]">
       {messages.map((msg) => (
         <Message key={msg.id} message={msg} />
       ))}
